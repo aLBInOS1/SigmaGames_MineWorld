@@ -21,10 +21,10 @@ export class PlayerControls extends PointerLockControls {
 
         // keyboard controls
         this.keys = [];
-        document.addEventListener("keydown", (e) => {
+        window.addEventListener("keydown", (e) => {
             self.keys.push(e.keyCode);
         });
-        document.addEventListener("keyup", (e) => {
+        window.addEventListener("keyup", (e) => {
             var arr = [];
             for (var i = 0; i < self.keys.length; i++) {
                 if (self.keys[i] != e.keyCode) {
