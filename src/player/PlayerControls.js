@@ -22,7 +22,6 @@ export class PlayerControls extends PointerLockControls {
         // keyboard controls
         this.keys = [];
         window.addEventListener("keydown", (e) => {
-            alert(e.key);
             self.keys.push(e.keyCode);
         });
         window.addEventListener("keyup", (e) => {
