@@ -20,6 +20,7 @@ export class PlayerControls extends PointerLockControls {
         });
 
         // keyboard controls
+        window.focus();
         this.keys = [];
         window.addEventListener("keydown", (e) => {
             self.keys.push(e.keyCode);
