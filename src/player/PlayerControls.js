@@ -20,7 +20,6 @@ export class PlayerControls extends PointerLockControls {
         });
 
         // keyboard controls
-        window.focus();
         this.keys = [];
         window.addEventListener("keydown", (e) => {
             self.keys.push(e.keyCode);
@@ -40,6 +39,8 @@ export class PlayerControls extends PointerLockControls {
             "mousedown",
             (event) => {
                 event.preventDefault();
+
+                window.focus();
 
                 // left click
                 if (event.button === 0)
