@@ -15,7 +15,7 @@ export const NEAR = 0.1;
 export const FAR = 1000;
 
 // MOVEMENT
-export const MOVEMENT_SPEED = 0.28;
+export const MOVEMENT_SPEED = 0.2;
 export const ACCELERATION = 0.05;
 export const GRAVITY_VELOCITY = -0.08;
 export const JUMP_VELOCITY = 0.42;
