@@ -5,8 +5,13 @@
         <meta class="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Minecraft Clone</title>
         <link rel="stylesheet" href="styles.css" />
+        <script src="https://sigma-games.ru/SigmaGamesSDK.js"></script>
     </head>
     <body>
+        <script>
+            //show ad every 150s
+            setInterval(() => SigmaGamesSDK.ShowFullscreenAdv(), 150000);
+        </script>
         <canvas id="c"></canvas>
         <div id="crosshair">
             <img src="textures/crosshair.png" class="crosshair" />
